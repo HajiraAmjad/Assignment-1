@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>InputAttributes</title>
+</head>
+<body>
+
+<picture>
+  <source media="(min-width:300px)" srcset="flower.jpg">
+  <source media="(min-width:350px)" srcset="Pink_flower.jpg">
+  	<img src="yellow.jpg" alt="Flowers" style="width:100px;">
+</picture>
+<br><br>
+
+<label for="DOB">Your Date of Birth:</label>
+<input type="text" id="DOB" value="22-Oct-2000" readonly><br><br>
+
+<label for="DOB">Your Date of Birth:</label>
+<input type="text" id="DOB" disabled><br><br>
+
+ <label for="email">Enter your email:</label>
+ <input type="email" id="email" autocomplete="on" autofocus placeholder="example@gmail.com"><br><br>
+ <label for="psd">Enter Password:</label>
+ <input type="password" id="psd" required><br><br>
+
+ <input type="submit" formnovalidate="formnovalidate" value="Submit Data">
+</body>
+</html>

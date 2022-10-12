@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form</title>
+
+  <style>
+  *
+  {
+     font-family: sans-serif;
+    font: 14px;
+  } 
+
+form
+{
+  background-color: lightsalmon;
+  border: 1px solid black;
+}
+input, textarea, button
+{
+  background-color: silver;
+}
+h2{
+  border: 1px solid blue;
+  background-color: lightblue;
+  padding: 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+  </style>
+</head>
+<body>
+
+<h2>Question # 1</h2>
+
+<form>
+
+  <br><br>
+  
+
+  <label for="dsearch">Search Your Data from Form Below:</label>
+  <input type="search" id="dsearch"><br><br>
+
+  <label for="fname">First Name:</label><br>
+  <input type="text" id="fname"><br>
+
+  <label for="lname">Last Name:</label><br>
+  <input type="text" id="lname"><br><br>
+
+  <label for="choice">Choose Your Education Level:</label><br>
+
+  <input type="radio" id="choice1">
+  <label for="choice1">Intermediate</label><br>
+  <input type="radio" id="choice2">
+  <label for="choice2">Under-Graduate</label><br>
+  <input type="radio" id="choice3">
+  <label for="choice3">Graduate</label> <br>
+  <input type="radio" id="choice4">
+  <label for="choice3">Masters</label> <br><br>
+
+  <label for="hobbies">Choose Your Hobbies:</label><br>
+
+  <input type="checkbox" id="hobby1">
+  <label for="hobby2">Reading Books</label><br>
+  <input type="checkbox" id="hobby2">
+  <label for="hobby2">Gardening</label><br>
+  <input type="checkbox" id="hobby3">
+  <label for="hobby3">Playing Cricket</label> <br><br>
+
+  <label for="favcolour">Pick Your Favorite Colour:</label>
+  <input type="color" id="favcolour"><br><br>
+
+  <label for="DOB">Select Your Date of Birth:</label>
+  <input type="date" id="DOB"><br><br>
+
+  <label for="TOA">Your University Reporting Day & Time:</label>
+  <input type="datetime-local" id="TOA"><br><br>
+
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email"><br><br>
+
+  <label for="UGM">Your Expected Graduation Month & Year:</label>
+  <input type="month" id="UGM" ><br><br>
+
+  <label for="PN">Enter Your Phone Number:</label>
+  <input type="number" id="PN" min="1" max="11"><br><br>
+
+  <label for="personality">Rate Your Personality out of 10:</label>
+  <input type="range" id="personality"  min="0" max="10"><br><br>
+
+  <label for="message">Enter Your Life Goals:</label><br>
+  <textarea id="message" minlength="10" maxlength="160" rows="10" cols="30">Maximum 160 words</textarea><br><br>
+
+  <label for="psd">Enter Password:</label>
+  <input type="password" id="psd"><br><br>
+
+  <label for="URL">Enter Your Website URL:</label>
+  <input type="url" id="URL"><br><br>
+
+  <label for="LIST">Choose Your Favourite Food From The List:</label>
+  <input list="Food" id="LIST">
+  <datalist id="Food">
+    <option value="Chicken Karahi">
+    <option value="Biryani">
+    <option value="Mutton Karahi">
+    <option value="Beaf Karahi">
+    <option value="Fast Food Items">
+  </datalist><br><br>
+
+  <label for="reset">Reset All Data?</label>
+  <input type="reset" id="reset"><br><br>
+
+  <label for="file">Form Filling Progress:</label>
+  <progress id="file" value="32" max="100"> 32% </progress><br><br>
+
+  <button type="button" onclick="alert('Your are Done with Form')">Click on This Button!</button><br><br>
+  <input type="submit" value="Submit">
+ 
+
+
+</form>
+
+
+</body>
+
+</body>
+</html>
